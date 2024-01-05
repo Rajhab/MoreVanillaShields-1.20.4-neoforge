@@ -1,4 +1,6 @@
 Changelog 1.0.0-1.20.4-neoforge:
 
-- Ported from 1.0.4-1.20.4 (forge) to NeoForge
+- Ported from 1.0.4-1.20.4 (forge) to NeoForge (unreleased)
+- Added Tinted Glass Shield
+- Changed language files
 - Working on config files

@@ -1,7 +1,5 @@
 package com.rajhab.morevanillashields_mod.item;
 
-
-import com.rajhab.morevanillashields_mod.MoreVanillaShieldsConfig.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -17,8 +15,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-import static com.rajhab.morevanillashields_mod.MoreVanillaShieldsConfig.DIAMOND_SHIELD_DURABILITY;
-import static com.rajhab.morevanillashields_mod.MoreVanillaShieldsConfig.diamondShieldDurability;
 import static com.rajhab.morevanillashields_mod.morevanillashields.MOD_ID;
 
 public class ModItems {

@@ -15,15 +15,15 @@
 
 
   "item.moditems.shift": "Drücke \"SHIFT\" für mehr Infos",
-  "item.moditems.leather_shield": "Leder Schild. Stabilität ist 196",
-  "item.moditems.gold_shield": "Gold Schild. Stabilität ist 322",
-  "item.moditems.diamond_shield": "Diamant Schild. Stabilität ist 512",
-  "item.moditems.netherite_shield": "Netherit Schild. Stabilität ist 2042",
-  "item.moditems.emerald_shield": "Smaragd Schild. Stabilität ist 512",
-  "item.moditems.amethyst_shield": "Amethyst Schild. Stabilität ist 432",
-  "item.moditems.end_crystal_shield": "End Kristal Schild. Stabilität ist 750",
-  "item.moditems.obsidian_shield": "Obsidian Schild. Stabilität ist 610",
-  "item.moditems.coal_shield": "Kohle Schild. Stabilität ist 268",
-  "item.moditems.glass_shield": "Glas Schild. Stabilität ist 300",
-  "item.moditems.tinted_glass_shield": "Getöntes Glas Schild. Stabilität ist 300"
+  "item.moditems.leather_shield": "Leder Schild. Standard Stabilität ist 196",
+  "item.moditems.gold_shield": "Gold Schild. Standard Stabilität ist 322",
+  "item.moditems.diamond_shield": "Diamant Schild. Standard Stabilität ist 512",
+  "item.moditems.netherite_shield": "Netherit Schild. Standard Stabilität ist 2042",
+  "item.moditems.emerald_shield": "Smaragd Schild. Standard Stabilität ist 512",
+  "item.moditems.amethyst_shield": "Amethyst Schild. Standard Stabilität ist 432",
+  "item.moditems.end_crystal_shield": "End Kristal Schild. Standard Stabilität ist 750",
+  "item.moditems.obsidian_shield": "Obsidian Schild. Standard Stabilität ist 610",
+  "item.moditems.coal_shield": "Kohle Schild. Standard Stabilität ist 268",
+  "item.moditems.glass_shield": "Glas Schild. Standard Stabilität ist 300",
+  "item.moditems.tinted_glass_shield": "Getöntes Glas Schild. Standard Stabilität ist 300"
 }

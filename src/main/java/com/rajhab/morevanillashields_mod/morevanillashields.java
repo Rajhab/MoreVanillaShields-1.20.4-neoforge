@@ -5,7 +5,6 @@ import com.rajhab.morevanillashields_mod.item.ModItems;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModLoadingContext;
@@ -31,8 +30,9 @@ public class morevanillashields
     private static final Logger LOGGER = LogUtils.getLogger();
     public morevanillashields(IEventBus modEventBus)
     {
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MoreVanillaShieldsConfig.SPEC, "morevanillashields-common.toml");
 
-        modEventBus.addListener(EventPriority.HIGHEST, this::commonSetup);
+        modEventBus.addListener(this::commonSetup);
 
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
@@ -44,9 +44,7 @@ public class morevanillashields
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MoreVanillaShieldsConfig.SPEC, "morevanillashields-common.toml");
-
+        LOGGER.info(MOD_ID + ": This mod runs without config file. The config file gets generated but does not work.");
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)

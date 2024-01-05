@@ -1,22 +1,22 @@
 package com.rajhab.morevanillashields_mod.item;
 
-import com.rajhab.morevanillashields_mod.morevanillashields;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import static com.rajhab.morevanillashields_mod.morevanillashields.MOD_ID;
+
 public class ModCreativeModeTab {
 
-    @Mod.EventBusSubscriber(modid = morevanillashields.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public class ModCreativeModeTabs {
-        public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-                DeferredRegister.create(Registries.CREATIVE_MODE_TAB, morevanillashields.MOD_ID);
+
+        public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
         @SubscribeEvent
         public static void buildContents(BuildCreativeModeTabContentsEvent pOutput) {
@@ -36,10 +36,6 @@ public class ModCreativeModeTab {
                 pOutput.accept(ModItems.NETHERITE_SHIELD);
                 pOutput.accept(ModItems.END_CRYSTAL_SHIELD);
             }
-        }
-
-        public static void register(IEventBus eventBus) {
-            CREATIVE_MODE_TABS.register(eventBus);
         }
     }
 }
