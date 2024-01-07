@@ -1,5 +1,6 @@
 package com.rajhab.morevanillashields_mod.item;
 
+import com.rajhab.morevanillashields_mod.MoreVanillaShieldsConfig;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -23,7 +24,12 @@ public class ModItems {
 
     //Shield
     public static final DeferredItem<Item> LEATHER_SHIELD = ITEMS.register("leather_shield",
-            () -> new ShieldItem(new Item.Properties().durability(196)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(196)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.LEATHER_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -37,10 +43,13 @@ public class ModItems {
                 }
             });
 
-
-
     public static final DeferredItem<Item> GOLD_SHIELD = ITEMS.register("gold_shield",
-            () -> new ShieldItem(new Item.Properties().durability(322)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(322)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.GOLD_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -55,9 +64,12 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> DIAMOND_SHIELD = ITEMS.register("diamond_shield",
-            () -> new ShieldItem(new Item.Properties().durability(512))
+            () -> new ShieldItem(new Item.Properties().defaultDurability(512)) {
 
-    {
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.DIAMOND_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -72,7 +84,12 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> GLASS_SHIELD = ITEMS.register("glass_shield",
-            () -> new ShieldItem(new Item.Properties().durability(300)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(300)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.GLASS_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -87,7 +104,12 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> TINTED_GLASS_SHIELD = ITEMS.register("tinted_glass_shield",
-            () -> new ShieldItem(new Item.Properties().durability(300)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(300)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.TINTED_GLASS_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -102,7 +124,12 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> NETHERITE_SHIELD = ITEMS.register("netherite_shield",
-            () -> new ShieldItem(new Item.Properties().durability(2042)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(2042)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.NETHERITE_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -125,7 +152,12 @@ public class ModItems {
             () -> new ShieldItem(new Item.Properties().durability(316)));*/
 
     public static final DeferredItem<Item> EMERALD_SHIELD = ITEMS.register("emerald_shield",
-            () -> new ShieldItem(new Item.Properties().durability(512)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(512)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.EMERALD_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -140,7 +172,12 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> AMETHYST_SHIELD = ITEMS.register("amethyst_shield",
-            () -> new ShieldItem(new Item.Properties().durability(432)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(432)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.AMETHYST_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -155,7 +192,12 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> OBSIDIAN_SHIELD = ITEMS.register("obsidian_shield",
-            () -> new ShieldItem(new Item.Properties().durability(610)){
+            () -> new ShieldItem(new Item.Properties().defaultDurability(610)){
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.OBSIDIAN_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
@@ -170,7 +212,13 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> COAL_SHIELD = ITEMS.register("coal_shield",
-            () -> new ShieldItem(new Item.Properties().durability(268)) {
+            () -> new ShieldItem(new Item.Properties().defaultDurability(268)) {
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.COAL_SHIELD_DURABILITY.get();
+                }
+
                 @Override
                 public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
                     return 2400;
@@ -189,7 +237,12 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> END_CRYSTAL_SHIELD = ITEMS.register("end_crystal_shield",
-            () -> new ShieldItem(new Item.Properties().durability(750)) {
+            () -> new ShieldItem(new Item.Properties().defaultDurability(750)) {
+
+                @Override
+                public int getMaxDamage(ItemStack stack) {
+                    return MoreVanillaShieldsConfig.END_CRYSTAL_SHIELD_DURABILITY.get();
+                }
 
                 @Override
                 public boolean isFoil(ItemStack stack) {

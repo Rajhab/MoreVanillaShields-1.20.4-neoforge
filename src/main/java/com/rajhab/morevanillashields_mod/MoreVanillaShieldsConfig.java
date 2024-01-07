@@ -11,6 +11,10 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public class MoreVanillaShieldsConfig
 {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+
+    public static final ModConfigSpec.Builder PUSH = BUILDER
+            .push("README!!!!!!!!!!!!!!!!!!!! Only change the Values before creating a world or a server (If you want to change the values)! Or change the values before creating or having a Shield! If you change the values (and you already used a shield), your world should break. And don't forget to restart your world / server. Thanks");
+
     public static final ModConfigSpec.ConfigValue<Integer> LEATHER_SHIELD_DURABILITY = BUILDER
             .comment("Durability of Leather Shield. Default Value is 196")
             .define("leatherShieldDurability", 196);

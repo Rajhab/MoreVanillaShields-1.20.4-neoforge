@@ -30,7 +30,9 @@ public class morevanillashields
     private static final Logger LOGGER = LogUtils.getLogger();
     public morevanillashields(IEventBus modEventBus)
     {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MoreVanillaShieldsConfig.SPEC, "morevanillashields-common.toml");
+        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MoreVanillaShieldsConfig.SPEC, "morevanillashields-common.toml");
+        //ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MoreVanillaShieldsConfig.SPEC, "morevanillashields-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, MoreVanillaShieldsConfig.SPEC, "morevanillashields-server.toml");
 
         modEventBus.addListener(this::commonSetup);
 
