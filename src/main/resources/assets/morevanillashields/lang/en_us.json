@@ -15,15 +15,15 @@
 
 
   "item.moditems.shift": "Press \"SHIFT\" for more Info",
-  "item.moditems.leather_shield": "Leather Shield. Default Durability is 196",
-  "item.moditems.gold_shield": "Gold Shield. Default Durability is 322",
-  "item.moditems.diamond_shield": "Diamond Shield. Default Durability is 512",
-  "item.moditems.netherite_shield": "Netherite Shield. Default Durability is 2042",
-  "item.moditems.emerald_shield": "Emerald Shield. Default Durability is 512",
-  "item.moditems.amethyst_shield": "Amethyst Shield. Default Durability is 432",
-  "item.moditems.end_crystal_shield": "End Crystal Shield. Default Durability is 750",
-  "item.moditems.obsidian_shield": "Obsidian Shield. Default Durability is 610",
-  "item.moditems.coal_shield": "Coal Shield. Default Durability is 268",
-  "item.moditems.glass_shield": "Glass Shield. Default Durability is 300",
-  "item.moditems.tinted_glass_shield": "Tinted Glass Shield. Default Durability is 300"
+  "item.moditems.leather_shield": "Leather Shield. Durability is ",
+  "item.moditems.gold_shield": "Gold Shield. Durability is ",
+  "item.moditems.diamond_shield": "Diamond Shield. Durability is ",
+  "item.moditems.netherite_shield": "Netherite Shield. Durability is ",
+  "item.moditems.emerald_shield": "Emerald Shield. Durability is ",
+  "item.moditems.amethyst_shield": "Amethyst Shield. Durability is ",
+  "item.moditems.end_crystal_shield": "End Crystal Shield. Durability is ",
+  "item.moditems.obsidian_shield": "Obsidian Shield. Durability is ",
+  "item.moditems.coal_shield": "Coal Shield. Durability is ",
+  "item.moditems.glass_shield": "Glass Shield. Durability is ",
+  "item.moditems.tinted_glass_shield": "Tinted Glass Shield. Durability is "
 }

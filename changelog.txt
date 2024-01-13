@@ -6,5 +6,12 @@ Changelog 1.0.0-1.20.4-neoforge:
 - Working on config files
 
 Changelog 1.0.1-1.20.4-neoforge:
-- Updated to neoforge - 20.4.80
+
+- Updated to neoforge - 20.4.80-beta
 - Finished Config file support
+
+Changelog 1.0.2-1.20.4-neoforge:
+
+- Updated to neoforge - 20.4.96-beta
+- Cleaned and sorted the code
+- Tool tips are now your custom durability (Example: Leather Shield. Durability is YOUR_DURABILITY)
